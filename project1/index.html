@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Personality Survey</h1>
+  <p id="description">We would like to know more about your personality.</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">
+      Enter your name:
+      <input required id="name" type="text" placeholder="Your name"></input>
+    </label>
+    
+    <label id="email-label" for="email">
+      Enter your Email:
+      <input required id="email" type="email" placeholder="Your email"></input>
+    </label>
+    
+    <label id="number-label" for="number">
+      Enter your age:
+      <input id="number" type="number" min="0" max="999" placeholder="age:"></input>
+    </label>
+    
+    <label for="dropdown">Your role:
+    <select id="dropdown">
+      <option value="employee">Employee</option>
+      <option value="lazy">Lazy</option>
+      <option value="student">Student</option>
+    </select>
+    </label>
+    <fieldset>
+      <legend>Choose your age group:</legend>
+      <label>
+        <input type="radio" name="age-group" value="adult"> Adult
+      </label>
+      <label>
+        <input type="radio" name="age-group" value="child"> Child
+      </label>
+    </fieldset>
+    
+    <fieldset>
+      <legend>How do you feel right now?</legend>
+      <label>
+        <input type="checkbox" name="mood" value="happy"> Happy
+      </label>
+      <label>
+        <input type="checkbox" name="mood" value="sad"> Sad
+      </label>
+    </fieldset>
+
+    <label for="description" >What is an important personality trait for you?</label>
+    <textarea name="discription" rows="3" cols="30" placeholder="Write about an important personality trait..."></textarea>
+ <input id="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
+
+
+
+
+
+
